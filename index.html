@@ -4,26 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fun Form</title>
-    <link rel="stylesheet" href="./styles.css" />
     <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main>
       <form action="">
-        <section class="form-section" id="face">
+        <section class="form-section" id="face-container">
+            <div id="face">
+              <span class="eye">
+                <span class="cornea"></span>
+                <span class="eyelid"></span>
+              </span>
+              <span class="eye">
+                <span class="cornea"></span>
+                <span class="eyelid"></span>
+              </span>
+            </div>
         </section>
-        <section class="form-section">
+        <section class="form-section" id="form">
             <div class="form-controller">
+                <label for="name">name</label>
               <input type="text" name="name" id="name" />
-              <label for="name">name</label>
             </div>
             <div class="form-controller">
+                <label for="password">password</label>
               <input type="text" name="password" id="password" />
-              <label for="password">password</label>
             </div>
             <div class="form-controller">
+                <label for="email">email address</label>
               <input type="email" name="email" id="email" />
-              <label for="email">email address</label>
             </div>
         </section>
       </form>

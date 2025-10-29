@@ -1,23 +1,108 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-main, form {
-    width: 50%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(231, 252, 245);
+main {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+form {
+  width: 90%;
+  height: 90%;
+  padding: 2rem;
+  background-color: rgb(222, 219, 225);
+  border-radius: 8px;
+  box-shadow: 1px 2px 3px gray;
+}
+
+.form-section {
+  width: 100%;
+  height: 50%;
+  margin: 0 auto;
+}
+
+#face-container{
+  padding: 1% 0;
+}
+
+#form {
+  padding-top: 5%;
+  border: 1px solid gray;
+}
+
+.form-controller {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem 0.5rem;
+  align-items: center;
+}
+
+#face {
+  border: 1px solid black;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+
+.eye {
+  width: 30%;
+  height: 20%;
+  margin-top: 30%;
+  position: relative;
+  border-radius: 30%;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.cornea {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 20%;
+  height: 15%;
+  background-color: rgb(171, 65, 65);
+}
+
+.eyelid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color:transparent;
+  z-index: 2;
+  transition: background-color 1.3s ease-in, height 0.7s linear;
+}
+
+.eyelid.open {
+height: 0;
+background-color: transparent;
+}
+
+.eyelid.close {
+height: 100%;
+background-color: rgba(0, 0, 0, 0.7);
+}
+
+input {
+  padding: 0.2rem 1.4rem;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: 1px 1px 3px ;
+}
