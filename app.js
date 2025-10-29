@@ -7,7 +7,7 @@ document.addEventListener("mouseleave", closeEye)
 formElement.addEventListener("mouseenter", handleFormEnter);
 formElement.addEventListener("mouseleave", handleFormLeave);
 
-const formWidth = (window.innerWidth * 68) / 100;
+const formWidth = (window.innerWidth * 81) / 100;
 const formHeight = (window.innerHeight * 72) / 100;
 
 function handleFollowMouse() {
@@ -82,4 +82,8 @@ function handleFaceElementBorder() {
   faceElement.style.width = (window.innerHeight * 3.5) / 10 + "px";
   faceElement.style.height = (window.innerHeight * 3.4) / 10 + "px";
   faceElement.style.borderRadius = (window.innerHeight * 2) / 10 + "px";
+}
+
+function smile() {
+  
 }
