@@ -1,6 +1,8 @@
 window.addEventListener("load", handleFaceElementBorder);
 window.addEventListener("resize", handleFaceElementBorder);
 const formElement = document.querySelector("form");
+const faceContainer = document.getElementById('face');
+
 
 document.addEventListener("mouseenter", handleFollowMouse);
 document.addEventListener("mouseleave", closeEye)
@@ -47,10 +49,12 @@ function handleFollowMouse() {
 
 function handleFormLeave() {
   openEye();
+  hideSmile();
 }
 
 function handleFormEnter() {
   closeEye();
+  showSmile()
 }
 
 function closeEye() {
@@ -84,6 +88,17 @@ function handleFaceElementBorder() {
   faceElement.style.borderRadius = (window.innerHeight * 2) / 10 + "px";
 }
 
-function smile() {
-  
+function showSmile() {
+  const spanSmileElement = document.querySelector('.smile');
+  spanSmileElement.classList.add('open')
+    spanSmileElement.classList.remove('close')
+
+}
+
+
+function hideSmile() {
+  const spanSmileElement = document.querySelector('.smile');
+  spanSmileElement.classList.add('close');
+    spanSmileElement.classList.remove('open')
+
 }
