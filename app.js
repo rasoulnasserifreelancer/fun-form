@@ -22,26 +22,23 @@ function handleFollowMouse() {
       const y = event.clientY;
       const rec = formElement.getBoundingClientRect();
 
-      if (x - rec.x > formWidth) {
-        cornea.style.left = "78%";
+      if (x  > formWidth + rec.x) {
+        cornea.style.left = "65%";
       } else if (x < rec.x) {
-        cornea.style.left = 0;
+        cornea.style.left = -"1%";
       } else {
-        cornea.style.left =
-          (x - rec.x) / formWidth < 22 / 100
-            ? 0
-            : ((x - rec.x) / formWidth) * 100 - 15 + "%";
+        cornea.style.left =((x - rec.x) / formWidth) * 100 - 35 + "%";
       }
 
-      if (y - rec.y > formHeight) {
-        cornea.style.bottom = "-10%";
+      if (y > formHeight +  rec.y) {
+        cornea.style.bottom = "-25%";
       } else if (y < rec.y) {
-        cornea.style.top = "10%";
+        cornea.style.top = -"1%";
       } else {
         cornea.style.top =
-          (y - rec.y) / formHeight < 22 / 100
-            ? 0
-            : ((y - rec.y) / formHeight) * 100 - 15 + "%";
+          (y - rec.y) / formHeight < 15 / 100
+            ? "5%"
+            : ((y - rec.y) / formHeight) * 100 - 25 + "%";
       }
     });
   });
