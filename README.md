@@ -31,7 +31,7 @@ A whimsical HTML/CSS/JS form that reacts to your presence! As your cursor approa
 
 🚀 Live Demo
 Check out the interactive experience here:
-👉 Live Demo on Vercel
+👉 Live Demo on Vercel (https://fun-form.vercel.app/)
 
 🛠️ Tech Stack
 - HTML5
@@ -44,9 +44,12 @@ Check out the interactive experience here:
 - Blink & Smile: On mouseenter event, triggers CSS transitions to close eyes and reveal smile.
 - Blink & Smile: On mouseleave event, triggers CSS transitions to open eyes and hide smile.
 - Layout Stability: Smile is hidden via opacity and transform, not removed from DOM—preserving layout integrity.
+  
 📦 Setup
 Clone the repo and open index.html in your browser:
-git clone https://github.com/your-username/FUN-FORM.git
-cd FUN-FORM
+
+git clone (https://github.com/rasoulnasserifreelancer/fun-form.git)
+
+cd fun-form
 
 
